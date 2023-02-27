@@ -88,21 +88,28 @@ height: 800px;
 display: flex;
 }
 .con-parts{
+    padding-left: 100px ;
   position: relative;
-    width: 100vw;
+    width: 95vw;
     display: flex;
     flex-direction: row;
-    margin: 50px;
+   
 }
 
 .con1half{
-   
-    width: 50%;
+
+    width: 60vw;
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
     justify-content: space-evenly;
 }
+
+.con2half{
+    position: relative;
+       width: 40vw;
+       margin-right: 20px;
+   }
 
 
 .con1half span{
@@ -126,10 +133,11 @@ display: flex;
     
 }
 .btn{
+    width: 150px;
     padding: 15px;
     border-radius: 5px;
     background-color: #101828;
-
+    font-size: 25px;
 }
 
 .btn a{
@@ -163,9 +171,6 @@ display: flex;
 }
 
 
-.con2half{
- position: relative;
-    width: 50%}
     
    
  .img1 img{
@@ -242,21 +247,19 @@ display: flex;
           width: 100vw;
           display: flex;
           flex-direction: column;
-          margin: 50px;
-          align-items: center;
-          
+         padding: 30px;
+          align-items: center;  
       }
       .con1half{
+        width: auto;
        align-content: center;
       }
       .con2half{
         position: absolute;
         left: -500px;
-      }
-      
-      
+      }  
 }
-@media screen and (max-width:600px){
+@media screen and (max-width:400px){
     .con-parts{
         position: relative;
           width: 100vw;
@@ -502,7 +505,7 @@ height: auto;
         flex-wrap: wrap;
     }
     .container4{
-        height: 1600px;
+        height: 1900px;
     }
 }
 
@@ -510,14 +513,14 @@ height: auto;
 .con4-sh1{
     border-radius: 15px;
     background-color: #fff3ea;
-    width: 40%;
+   padding: 30px;
    margin: 20px 60px
 }
 
 .con4-sh1 h4{
     font-size: 40px;
     margin-top: 10%;
-    margin-left: 60px;
+    margin-left: 30px;
     width: 400px;
     
 }
@@ -526,14 +529,14 @@ height: auto;
     font-size: 15px;
  
     margin-top: 10%;
-    margin-left: 60px;
+    margin-left: 20px;
     width: 400px;
     
 }
 
 .con4-img{
     margin-top: 20%;
-    margin-left: 10%;
+    margin-left: 4%;
     height: 420px;
     width: 420px;
     background-color: #cbd1e5;
@@ -564,24 +567,24 @@ height: auto;
 
 .container5{
     width: 100vw;
-    height: 1000px;
+   
     margin-top: 200px;
    
 }
 .con5-in{
     margin: 2% 10%;
-   height: 950px;
+   
 }
 
 .con5-s1{
-    margin: 0% 18%;
+  
     text-align: center;
     padding: 50px;
     margin-top: 20px;
 }
 .con5-s2{
     width: 80%;
-    height: 300px;
+    height: auto;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
@@ -621,10 +624,7 @@ font-size: 16px;
     .con5-s2{
         flex-wrap: wrap;
     }
-    .container5{
-        
-        height: 1000px;
-    }
+
     .con5-s1{
        margin-top: 50px;
     
@@ -640,13 +640,9 @@ font-size: 16px;
     .con5-s2{
         flex-wrap: wrap;
     }
-    .container5{
-        
-        height: 1200px;
-    }
     .con5-s1{
        margin-top: 50px;
-
+       
     }
     .con5-in{
         padding: auto;
@@ -764,7 +760,9 @@ font-size: 16px;
     padding-bottom: 40px;
     text-align: center;
   }
-  
+  .pricing-sec{
+   margin-left: 20px;
+}
   .card {
     width: 220px;
     height: 500px;
@@ -808,15 +806,12 @@ font-size: 16px;
   }
   
   .pricing-row {
-    width: auto;
-    height: auto;
-    padding-top: 90px;
+    margin: auto;
+    width: 90vw;
     display: flex;
     flex-wrap: wrap;
-    
-    align-items: center;
-    padding-left: 9%;
-    padding-right: 8%;
+    align-content: space-between;
+    padding: auto;
   }
   .btn-p{
     font-size: 15px;
@@ -848,7 +843,17 @@ font-size: 16px;
     background-color: #006d77;
   }
 
-  
+  @media screen and (max-width:400px){
+    .pricing-row{
+       width: auto;
+    }
+    .pricing-sec{
+        width: auto;
+  }
+  .pricing-sec{
+    margin-left: 10%;
+ }
+}
 
 
 
