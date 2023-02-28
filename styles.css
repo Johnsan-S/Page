@@ -3,6 +3,8 @@
     margin: 0;
     box-sizing: border-box;
     font-family: sans-serif;
+    width: auto;
+    height: auto;
 }
 
 body{
@@ -93,7 +95,7 @@ display: flex;
     width: 95vw;
     display: flex;
     flex-direction: row;
-   
+   padding: 20px;
 }
 
 .con1half{
@@ -349,11 +351,14 @@ padding: 50px 0px;
     display: flex;
 }
 .inner-first{
-    display: flex;
 width: 50vw;
 height: 100vh;
+position: relative;
 }
 .inner-first img{
+    position: absolute;
+    width: 100%;
+    height: auto;
     border-radius: 20px;
 }
 .inner-second{
@@ -418,27 +423,29 @@ height: 100vh;
 }
 
 
-@media screen and (max-width:900px){
+@media screen and (max-width:700px){
    
     
 .container3{
    padding-top: 20px;
     width: 100vw;
-    height: 2000px;
-  
-  
+    height: 1500px;
 }
-
-.cont3-inner{
-   
-   
+.cont3-inner{  
     display: flexbox;
     flex-wrap: wrap;
+    flex-direction: column;
     height: auto;
 }
 
+.inner-first img{
+    position: absolute;
+    width: 100%;
+    height: auto;
+    border-radius: 20px;
+}
 .inner-second{
-   margin-top: 100px; 
+   margin-top: 300px; 
 
 width: auto;
 height: auto;
@@ -451,8 +458,9 @@ height: auto;
 
 
     .inner-first{
-        margin: auto;
-        width: auto;
+        
+        width: 100%;
+        height: auto;
    
     }
    
@@ -499,7 +507,7 @@ height: auto;
   
 }
 
-@media screen and (max-width:900px){
+@media screen and (max-width:700px){
    
     .con4-sh{
         flex-wrap: wrap;
